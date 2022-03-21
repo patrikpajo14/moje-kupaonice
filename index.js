@@ -2,8 +2,6 @@ const toggle = document.querySelector(".toggle");
 const navbar = document.getElementById("navbar");
 const header = document.getElementById("header");
 
-console.log(header);
-
 function toggleClick() {
   if (navbar.style.display === "block") {
     navbar.style.display = "none";
@@ -24,7 +22,6 @@ window.addEventListener("resize", function () {
 
 window.addEventListener("scroll", function () {
   let y = this.window.scrollY;
-  console.log(y);
   if (y > 1) {
     header.style.backgroundColor = "rgb(0, 0, 0, 0.8)";
   } else {

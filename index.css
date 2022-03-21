@@ -460,6 +460,13 @@ footer p {
   .navbar {
     justify-content: center;
     display: none;
+    padding: 0px 100px;
+  }
+  .navbar li {
+    padding: 5px 0px;
+  }
+  .navbar li a {
+    font-size: 18px;
   }
   footer .navbar {
     display: block;
@@ -474,7 +481,9 @@ footer p {
   }
   .toggle {
     display: block;
-    padding-right: 10px;
+    position: relative;
+    font-size: 30px;
+    right: 30px;
   }
   .logo {
     order: 1;
@@ -502,6 +511,17 @@ footer p {
   .articles-header p {
     font-size: 16px;
   }
+  .follow::before {
+    width: 15rem;
+    font-size: 24px;
+  }
+  .newsletter::before {
+    width: 15rem;
+    font-size: 24px;
+  }
+  .last-section article {
+    padding: 50px 50px;
+  }
 }
 
 @media all and (max-width: 689px) {
@@ -519,15 +539,36 @@ footer p {
     width: 100%;
   }
   #email {
-    width: 60%;
+    width: 80%;
+  }
+  form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  form button {
+    margin-left: 0px;
+    margin-top: 20px;
   }
   .last-section article p {
     font-size: 14px;
+  }
+  .follow::before {
+    top: 370px;
   }
 }
 
 @media all and (max-width: 574px) {
   .follow::before {
-    top: 350px;
+    top: 390px;
+  }
+  .last-section article {
+    padding: 50px 30px;
+  }
+}
+
+@media all and (max-width: 381px) {
+  .follow::before {
+    top: 400px;
   }
 }
